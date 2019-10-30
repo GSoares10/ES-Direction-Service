@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import Free Font Awesome Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!--Import my Styles.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Directions Service</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="header">
+        <nav class="nav-wrapper grey darken-4">
+            <div class="container">
+                <a href="https://github.com/GSoares10" class="brand-logo center tooltipped "
+                    data-tooltip="Github - Perfil">
+                    <i class="fab fa-github medium"></i>
+                </a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#" class="tooltipped btn-floating btn grey darken-4" data-tooltip="Github - Código">
+                            <i class="material-icons">code</i>
+                        </a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="https://github.com/GSoares10">Github - Perfil <i class="fab fa-github"></i></a></li>
+                    <li><a href="">Github - Code <i class="material-icons">code</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- dropdown -->
+    <div class="row hide-on-med-and-down">
+        <div class="col s12 l6">
+            <label>Destino</label>
+            <select class="browser-default center" id="end">
+                <option value="" disabled selected>Escolha seu destino</option>
+                <option value="rio grande, RS">Rio Grande</option>
+                <option value="pelotas, RS">Pelotas</option>
+                <option value="rio de janeiro, RJ">Rio de Janeiro</option>
+                <option value="porto alegre, RS">Porto Alegre</option>
+                <option value="florianopolis, SC">Florianópolis</option>
+                <option value="novo hamburgo, RS">Novo Hamburgo</option>
+                <option value="sao paulo, SP">São Paulo</option>
+                <option value="bento goncalves, RS">Bento Gonçalves</option>
+                <option value="curitiba, PR">Curitíba</option>
+                <option value="campos dos goytacazes, RJ">Campos dos Goytacazes</option>
+                <option value="angra dos reis, RJ">Angra dos Reis</option>
+                <option value="rio branco, AC">Rio Branco</option>
+            </select>
+        </div>
+    </div>
+    <!-- floating button - mobile -->
+    <div class="fixed-action-btn hide-on-med-and-up">
+        <a class="btn-floating btn-large red modal-trigger" href="#modal1">
+                <i class="fas fa-location-arrow"></i>
+        </a>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Destino</h4>
+                <select class="browser-default center" id="end-mobile">
+                    <option value="" disabled selected>Escolha seu destino</option>
+                    <option value="rio grande, RS">Rio Grande</option>
+                    <option value="pelotas, RS">Pelotas</option>
+                    <option value="rio de janeiro, RJ">Rio de Janeiro</option>
+                    <option value="porto alegre, RS">Porto Alegre</option>
+                    <option value="florianopolis, SC">Florianópolis</option>
+                    <option value="novo hamburgo, RS">Novo Hamburgo</option>
+                    <option value="sao paulo, SP">São Paulo</option>
+                    <option value="bento goncalves, RS">Bento Gonçalves</option>
+                    <option value="curitiba, PR">Curitíba</option>
+                    <option value="campos dos goytacazes, RJ">Campos dos Goytacazes</option>
+                    <option value="angra dos reis, RJ">Angra dos Reis</option>
+                    <option value="rio branco, AC">Rio Branco</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-red btn-flat">Fechar</a>
+            </div>
+        </div>
+    </div>
+    <!-- Google Maps - API container -->
+    <div id="map">
+
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Google Maps - API -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ3B51C2XxpsPj2tifmNSnNiGi9fGDmBQ&callback=initMap">
+        </script>
+    <!-- My Scripts-->
+    <script type="text/javascript" src="js/coordAtual-Rota.js"></script>
+    <script type="text/javascript" src="js/JQuery.js"></script>
+
+</body>
+
+</html>
